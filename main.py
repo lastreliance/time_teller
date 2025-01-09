@@ -13,6 +13,8 @@ def main():
     app.add_url_rule("/time", view_func=TimeTeller.as_view("time/seconds"))
     app.add_url_rule("/", view_func=Homepage.as_view("homepage"))
 
+    print(f"SERVER RUNNING ON PORT {PORT}")
+
     serve(app, host=HOST, port=PORT)
 
 
