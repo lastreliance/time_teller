@@ -5,4 +5,4 @@ import flask.views
 class TimeTeller(flask.views.MethodView):
     @staticmethod
     def get():
-        return round(time.time()), 200
+        return str(round(time.time())), 200
